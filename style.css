@@ -1,5 +1,192 @@
+:root {
+    
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+@font-face {
+    font-family: "OutFitBlack";
+    src: url(assets/fonts/Outfit-Regular.ttf);
+}
+@font-face {
+    font-family: "YoungSerif";
+    src: url(assets/fonts/YoungSerif-Regular.ttf);
+}
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: "OutFitBlack";
+}
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+body main {
+    padding: 4rem 0px;
+    max-width: 1440px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+body main img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+body main h1 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "YoungSerif";
+    color: var(--dark-charcoal);
+}
+body main p {
+    font-family: "OutFitBlack";
+    color: var(--wenge-brown);
+}
+body main .prep-time {
+    width: 100%;
+    border-radius: .6rem;
+    font-family: "OutFitBlack";
+    color: var(--wenge-brown);
+    padding: 1.5rem;
+    background-color: var(--rose-white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .7rem;
+}
+body main .prep-time h4 {
+    font-size: 20px;
+    color: var(--dark-raspberry);
+}
+body main .prep-time ul {
+    padding: 0 1.5rem;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+body main .prep-time li {
+    padding: 0 1rem;
+    text-decoration: none;
+    list-style-type: disc;
+}
+body main .prep-time li strong {
+    font-weight: bolder;
+}
+
+body main .ingredients {
+    width: 100%;
+    /* border-radius: .6rem; */
+    font-family: "OutFitBlack";
+    color: var(--wenge-brown);
+    /* padding: 1.5rem; */
+    /* background-color: var(--rose-white); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .7rem;
+}
+body main .ingredients h4 {
+    font-size: 24px;
+    font-family: "YoungSerif";
+    font-weight: 100;
+    color: var(--nutmeg);
+}
+body main .ingredients ul, 
+body main .inst ol {
+    padding: 0 1.5rem;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+body main .ingredients li {
+    padding: 0 1rem;
+    text-decoration: none;
+    list-style-type: disc;
+}
+body main .inst ol {
+    padding: 0 1rem;
+    text-decoration: none;
+    list-style-type: numbers;
+}
+body main .ingredients li strong {
+    font-weight: bolder;
+}
+
+
+body main .inst {
+    width: 100%;
+    /* border-radius: .6rem; */
+    font-family: "OutFitBlack";
+    color: var(--wenge-brown);
+    /* padding: 1.5rem; */
+    /* background-color: var(--rose-white); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .7rem;
+}
+body main .inst h4 {
+    font-size: 24px;
+    font-family: "YoungSerif";
+    font-weight: 100;
+    color: var(--nutmeg);
+} 
+body main .inst ol {
+    padding: 0 1.5rem;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+body main .inst ol li {
+    padding: 0 1rem;
+    text-decoration: none;
+    /* list-style-type: disc; */
+}
+body main .inst ol strong {
+    font-weight: bolder;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table tbody tr {
+    width: 100%;
+    border-bottom: 1px solid var(--light-grey);
+}
+table tbody tr:last-child {
+    width: 100%;
+    border-bottom: none;
+}
+table tbody tr td {
+    padding: 1rem 2rem;
+}
+hr {
+    width: 100%;
+    height: 1px;
+    color: var(--light-grey);
+    opacity: .4;
 }
